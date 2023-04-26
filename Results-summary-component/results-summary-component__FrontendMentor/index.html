@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result summary component</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link icon fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="app">
+        <div class="your-result">
+          <p class="your-result-heading">Your Result</p>
+          <div class="number-background">
+            <div class="number-result">
+              <span>76</span>
+              <span>of 100</span>
+            </div>
+          </div>
+          <h1 class="your-result-status">Great</h1>
+          <p class="your-result-desc">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+
+        <div class="summary">
+          <p class="summary-heading">Summary</p>
+          <div class="summary-info Light-red">
+            <div>
+              <img
+                src="./assets/img/icon-reaction.svg"
+                alt="icon-reaction"
+                class="summary-info-icon"
+              />
+              <span class="summary-info-title red">Reaction</span>
+            </div>
+            <div>
+              <span class="summary-info-number summary-info-number--bold"
+                >80</span
+              ><span class="summary-info-number summary-info-number--bland"
+                ><span>/</span> 100</span
+              >
+            </div>
+          </div>
+          <div class="summary-info Orangey-yellow">
+            <div>
+              <img
+                src="./assets/img/icon-memory.svg"
+                alt="icon-reaction"
+                class="summary-info-icon"
+              />
+              <span class="summary-info-title yellow">Memory</span>
+            </div>
+            <div>
+              <span class="summary-info-number summary-info-number--bold"
+                >92</span
+              ><span class="summary-info-number summary-info-number--bland"
+                >/100</span
+              >
+            </div>
+          </div>
+          <div class="summary-info Green-teal">
+            <div>
+              <img
+                src="./assets/img/icon-verbal.svg"
+                alt="icon-reaction"
+                class="summary-info-icon"
+              />
+              <span class="summary-info-title teal">Verbal</span>
+            </div>
+            <div>
+              <span class="summary-info-number summary-info-number--bold"
+                >61</span
+              ><span class="summary-info-number summary-info-number--bland"
+                >/100</span
+              >
+            </div>
+          </div>
+          <div class="summary-info Cobalt-blue">
+            <div>
+              <img
+                src="./assets/img/icon-visual.svg"
+                alt="icon-reaction"
+                class="summary-info-icon"
+              />
+              <span class="summary-info-title blue">Visual</span>
+            </div>
+            <div>
+              <span class="summary-info-number summary-info-number--bold"
+                >72</span
+              ><span class="summary-info-number summary-info-number--bland"
+                >/100</span
+              >
+            </div>
+          </div>
+          <button class="summary-info-btn">Continue</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

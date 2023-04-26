@@ -1,0 +1,18 @@
+/* Mobile */
+@media (max-width: 739px) {
+  .app {
+    display: block;
+    height: auto;
+  }
+  .your-result {
+    padding-top: 176px;
+    border-radius: 0 0 25px 25px;
+  }
+  .your-result-desc {
+    max-width: 270px;
+    padding-bottom: 30px;
+  }
+  .summary {
+    padding-bottom: 20px;
+  }
+}

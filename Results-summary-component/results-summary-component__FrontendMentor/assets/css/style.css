@@ -1,0 +1,207 @@
+:root {
+  /* Primary color */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  /* Gradient */
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+.red {
+  color: var(--Light-red);
+}
+.yellow {
+  color: var(--Orangey-yellow);
+}
+.teal {
+  color: var(--Green-teal);
+}
+.blue {
+  color: var(--Cobalt-blue);
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 439px;
+  width: 663px;
+  /* border: 1px solid red; */
+  border-radius: 27px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+/* your result */
+.your-result {
+  flex-basis: 50%;
+  background: linear-gradient(
+    193deg,
+    var(--Light-slate-blue-background) 0%,
+    var(--Light-royal-blue-background) 100%
+  );
+  background-repeat: no-repeat;
+  border-radius: 27px;
+  text-align: center;
+}
+.your-result-heading {
+  font-size: 20px;
+  margin: 25px 0;
+  font-weight: 500;
+  color: var(--Light-lavender);
+}
+.number-background {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(
+    151deg,
+    var(--Light-royal-blue-background) 0%,
+    var(--Light-slate-blue-background) 100%
+  );
+}
+.number-result {
+  position: absolute;
+  top: 20%;
+  right: 44px;
+}
+.number-result span:nth-child(1) {
+  font-size: 50px;
+  color: white;
+  display: block;
+}
+.number-result span:nth-child(2) {
+  color: #969595;
+  font-weight: 500;
+}
+.your-result-status {
+  color: white;
+  font-size: 30px;
+  margin: 20px 0;
+}
+.your-result-desc {
+  max-width: 236px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--Light-lavender);
+}
+
+/* summary */
+.summary {
+  flex-basis: 50%;
+  padding: 0 40px;
+}
+.summary-heading {
+  font-size: 20px;
+  margin: 25px 0;
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+}
+.summary-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.summary-info div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-info div {
+  line-height: 47px;
+}
+.Light-red {
+  background-color: rgba(255, 87, 87, 0.1);
+  border-radius: 10px;
+  height: 47px;
+}
+.Orangey-yellow {
+  background-color: rgba(255, 176, 31, 0.1);
+  border-radius: 10px;
+  height: 47px;
+}
+.Green-teal {
+  background-color: rgba(0, 189, 145, 0.1);
+  border-radius: 10px;
+  height: 47px;
+}
+.Cobalt-blue {
+  background-color: rgba(17, 37, 212, 0.1);
+  border-radius: 10px;
+  height: 47px;
+}
+
+.summary-info-icon {
+  width: 100%;
+  height: 49%;
+  object-fit: cover;
+  margin: 0 10px;
+}
+.summary-info-title {
+  font-weight: 700;
+}
+
+.summary-info-number--bold {
+  margin: 0 5px;
+  font-weight: 700;
+}
+.summary-info-number--bland {
+  color: #b3b3b3;
+  margin-right: 10px;
+}
+.summary-info-btn {
+  cursor: pointer;
+  background-image: linear-gradient(180deg, #303b5a, #303b5a);
+  width: 100%;
+  height: 43px;
+  border-radius: 30px;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+}
+.summary-info-btn:hover {
+  background-image: linear-gradient(180deg, #7857ff, #2e2be9);
+}
