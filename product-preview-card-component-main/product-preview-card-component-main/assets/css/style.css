@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Montserrat", sans-serif;
+}
+img,
+picture,
+svg,
+video {
+  /* display: block;
+  max-width: 100%; */
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-cream);
+}
+:root {
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.app {
+  width: 600px;
+  height: 438px;
+  border: 1px solid var(--white);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product {
+  display: flex;
+}
+.product-image {
+  width: 300px;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+}
+.product-desc {
+  width: 300px;
+  background-color: var(--white);
+}
+.perfume {
+  color: var(--dark-grayish-blue);
+  text-transform: uppercase;
+  display: block;
+  margin: 25px 35px;
+}
+.product-desc__heading {
+  display: block;
+  margin: 25px 35px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.product-desc__heading span {
+  display: block;
+  font-weight: 700;
+  font-size: 25px;
+}
+.product-desc__info {
+  display: block;
+  margin: 25px 35px;
+  color: var(--dark-grayish-blue);
+  font-size: 15px;
+  line-height: 1.4;
+}
+.product-price {
+  display: flex;
+  align-items: center;
+  margin: 25px 35px;
+}
+.product-price__present {
+  color: var(--primary-dark-cyan);
+  font-weight: 700;
+  font-size: 30px;
+}
+.product-price__sale {
+  color: var(--dark-grayish-blue);
+  margin: 0 20px;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+.product-cart {
+  display: block;
+  margin: 25px 35px;
+  background-color: var(--primary-dark-cyan);
+  color: var(--white);
+  width: 229px;
+  height: 45px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.product-cart i {
+  margin-right: 10px;
+}
+.product-cart:hover {
+  background-color: hsl(158, 31%, 25%);
+}
