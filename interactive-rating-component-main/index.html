@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="star">
+        <img src="./images/icon-star.svg" alt="" />
+      </div>
+      <div class="desc">
+        <h2 class="desc-heading">How did we do ?</h2>
+        <p class="description">
+          please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering !
+        </p>
+      </div>
+      <div class="btn-list">
+        <button class="btn-item">1</button>
+        <button class="btn-item">2</button>
+        <button class="btn-item">3</button>
+        <button class="btn-item">4</button>
+        <button class="btn-item">5</button>
+      </div>
+      <div class="btn-submit">
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+
+    <!-- thank you -->
+    <div class="app-thank-you hidden">
+      <div class="image">
+        <img src="./images/illustration-thank-you.svg" alt="" />
+      </div>
+      <p class="img-desc">
+        You selected
+        <span id="rating"></span>
+        out of 5
+      </p>
+
+      <div class="thank-you-desc">
+        <h2>Thank you !</h2>
+        <p>
+          We appreciate you taking the time to give a rating, if you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+      <div class="btn-submit">
+        <button class="rate-again">Rate again</button>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>
