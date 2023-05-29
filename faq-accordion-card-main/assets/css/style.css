@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+/* primary style */
+:root {
+  --softRed: hsl(14, 88%, 65%);
+  --veryDarkGrayBlue: hsl(237, 12%, 33%);
+  --darkGrayBlue: hsl(240, 6%, 50%);
+  --lightGrayBlue: hsl(240, 5%, 91%);
+  --text-color: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  padding: 10rem 1rem;
+  color: var(--text-color);
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+.border-none {
+  border: none;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2rem;
+  max-width: 56rem;
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 15rem;
+  padding: 2.875rem 1.5rem;
+}
+.card__box {
+  display: none;
+}
+.card__image {
+  position: relative;
+}
+.card__image img {
+  display: block;
+  position: absolute;
+  top: -6.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  max-width: 15rem;
+}
+.card__text {
+  padding-top: 7rem;
+}
+.card__text h1 {
+  font-size: 1.5rem;
+}
+.accordion__item {
+  margin: 15px 0;
+  border-bottom: 1px solid var(--lightGrayBlue);
+}
+.accordion__item h2 {
+  margin-bottom: 0;
+}
+.accordion__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+.accordion__question::after {
+  content: "";
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.5rem;
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 300ms ease-in-out;
+}
+
+.accordion__question.open {
+  font-weight: 700;
+}
+.accordion__question.open::after {
+  transform: rotate(180deg);
+}
+.accordion__content {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  /* padding: 1rem; */
+}
+
+.accordion__content.open {
+  display: block;
+}
+
+.accordion__collapse {
+  transition: height 300ms ease;
+}
+.accordion__collapse.collapse {
+  display: none;
+}
+.accordion__collapse.collapsing {
+  height: 0;
+  overflow: hidden;
+}
+.accordion__collapse.open {
+  display: block;
+}
+
+/* desktop style*/
+@media (min-width: 56em) {
+  body {
+    padding: 1rem;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: -13% center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0;
+  }
+  .card__box {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%) translateY(-25%);
+    z-index: 1;
+  }
+
+  .card__image,
+  .card__text {
+    flex: 1;
+  }
+  .card__image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 0;
+  }
+  .card__image img {
+    position: relative;
+    top: auto;
+    max-width: 25rem;
+    transform: translateX(-17em);
+  }
+  .card__text {
+    padding-top: 0;
+    padding-right: 10px;
+    padding: 50px 10px;
+  }
+  .card h1 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .accordion__item {
+    margin: 15px 0;
+  }
+  .accordion .accordion__item h2 {
+    padding: 10px 0;
+  }
+
+  img.accordion__icon {
+    margin: 0 10px;
+  }
+  .accordion__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.0625rem;
+    margin-right: 10px;
+    font-size: 1.0625rem;
+    font-weight: 400;
+  }
+  .accordion__question:hover {
+    color: var(--Soft-red);
+  }
+  .accordion__question::after {
+    margin: 0 20px;
+  }
+}
