@@ -157,7 +157,7 @@ h3 {
 /* desktop style*/
 @media (min-width: 56em) {
   body {
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .card {
     position: relative;
